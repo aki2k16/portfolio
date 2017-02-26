@@ -1,10 +1,199 @@
 @@charset "UTF-8";
 
+html {
+  font-size: 62.5%;
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
-  text-align: "center";
-  font-family: "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  text-align: center;
+  font-family: 'Lora', serif, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  color: #fff;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.header {
+  padding: 120px 30px 80px;
+  background-color: black;
+}
+
+.site-title {
+  margin: 100px 0 40px;
+  font-size: 7.6rem;
+  color: #fff;
+}
+
+.site-description {
+  margin-bottom: 50px;
+  color: #888;
+  font-size: 1.6rem;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: #afa58d;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.button:hover {
+  opacity: 0.9;
+}
+
+.button-showy {
+  background-color: #f1b400;
+}
+
+.buttons .button {
+  margin: 10px;
+}
+
+.about {
+  padding: 80px 30px;
+  background-color: #fff;
+  color: #333;
+}
+
+.heading {
+  position: relative;
+  display: inline-block;
+  margin: 30px 0 15px;
+  padding-bottom: 15px;
+  letter-spacing: 2px;
+  font-size: 4rem;
+}
+.heading::before,
+.heading::after {
+  content:'';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-bottom: 1px solid #999;
+}
+.heading::before {
+  bottom: 5px;
+}
+
+.about-text {
+  margin: 30px 0;
+  line-height: 2.5;
+}
+
+.works {
+  background-color: #000033;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.works-wrapper {
+  display: table;
+  width: 100%;
+  margin-top: 60px;
+  table-layout: fixed;
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+.work-box {
+  position: relative;
+  display: table-cell;
+}
+.work-box::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background: no-repeat;
+  background-size: 100% 100%;
+  opacity: 0.2;
+  transform: scaleY(-1);
+}
+.work-box.seattle::after {
+  background-image: url('../images/Life in Seattle top.png');
+}
+.work-box.chat::after {
+  background-image: url('../images/chat-space top.png')
+}
+.work-box.air::after {
+  background-image: url('../images/air-bnb.png')
+}
+.work-image {
+  display: block;
+  width: 100%;
+  margin: 0 0 60%;
+}
+.work-description {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+.work-description-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+.work-text {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  line-height: 2;
+}
+.work-text .button {
+  width: 60%;
+  margin-top: 20px;
+  padding: 3px;
+}
+
+.skills {
+  padding: 80px 0;
+  background-color: #fff;
+  color: #333;
+}
+
+.skills-wrapper {
+  display: table;
+  width: 80%;
+  margin: 50px auto 0;
+  table-layout: fixed;
+}
+.skill-box {
+  display: table-cell;
+}
+.skill-icon {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 30px;
+  font-size: 8rem;
+  line-height: 150px;
+}
+.skill-title {
+  margin: 0 20px 20px;
+  font-size: 1.5rem;
+}
+
+i {
+  display: inline-block;
+}
+
+.skill-icon .devicon-html5-plain-wordmark .colored {
+  display: inline-block;
+}
+
+.footer {
+  padding: 12px 0;
+  font-size: 1.3rem;
+  color: black;
 }
