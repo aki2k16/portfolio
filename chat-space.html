@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>portfolio</title>
+<!-- googleからfontの読み込み -->
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<!-- cssの読み込み　-->
+<link rel="stylesheet" href="css/works.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- deviconの読み込み -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+</head>
+<body>
+  <header class="header">
+    <nav class="global-nav">
+      <li class="nav-item"><a href="index.html">TOP</a></li>
+      <li class="nav-item active"><a href="index.html#works">WORKS</a></li>
+      <li class="nav-item"><a href="index.html#about">ABOUT</a></li>
+    </nav>
+  </header>
+  <div class="wrapper clearfix">
+    <div class="sidemenu">
+      <div class="sidemenu-inner">
+        <div class="sidemenu-description">
+          <ul>
+            <li class="sidemenu-description-item"><span class="description-text">アプリケーション名:</span> chat-space</li>
+            <li class="sidemenu-description-item"><span class="description-text">使用言語:</span> Ruby on Rails, Haml, Sass, jQuery</li>
+            <li class="sidemenu-description-item"><span class="description-text">概要:</span></br>チャット機能を搭載したwebアプリケーション。</li>
+            <li class="sidemenu-description-item"><span class="description-text">制作期間:</span> 1 month</li>
+            <li class="sidemenu-description-item"><span class="description-text">制作理由:</span></br>アプリケーション制作を通してRuby on Railsを理解する為。</li>
+            <li class="sidemenu-description-item"><span class="description-text">実装機能:</span></br>・メッセージ投稿機能</br>・画像投稿機能</br>・グループ作成機能</br>・メッセージ自動更新</br>・インクリメンタルサーチ</br>・ログイン,ログアウト機能
+            </li>
+            <li class="sidemenu-description-item"><span class="description-text">詰まったところ:</span></br>
+            メッセージ送信機能を非同期で実装。Ajaxの仕組みなどわからないところが多く、仕組みを理解し実際にjQueyでの実装が終わるまで長いこと時間を費やしてしまった。同様にインクリメンタルサーチもjavascriptでの要素の追加処理などでかなり苦労しました。</li>
+            <li class="sidemenu-description-item"><a href="https://github.com/aki2k16/chat-space"　target="_blank"><i class="devicon-github-plain-wordmark colored"></i></a></li>
+         </ul>
+        </div>
+        <div class="arrow">
+          <a href="seattle.html"><i class="fa fa-chevron-left" aria-hidden="true"></i></a><a href="air-bnb.html"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="image-box">
+        <img class="image-box-image" src="images/chat-space top.png" alt="制作事例1">
+      </div>
+      <div class="image-box">
+        <img class="image-box-image" src="images/chat-space2.png" alt="制作事例2">
+      </div>
+      <div class="image-box">
+        <img class="image-box-image" src="images/chatspace-signin.png" alt="制作事例3">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
