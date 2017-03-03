@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>portfolio</title>
+<!-- googleからfontの読み込み -->
+<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+<!-- cssの読み込み　-->
+<link rel="stylesheet" href="css/works.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<!-- deviconの読み込み -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+</head>
+<body>
+  <header class="header">
+    <nav class="global-nav">
+      <li class="nav-item"><a href="index.html">TOP</a></li>
+      <li class="nav-item active"><a href="index.html#works">WORKS</a></li>
+      <li class="nav-item"><a href="index.html">ABOUT</a></li>
+    </nav>
+  </header>
+  <div class="wrapper clearfix">
+    <div class="sidemenu">
+      <div class="sidemenu-inner">
+        <div class="sidemenu-description">
+          <ul>
+            <li class="sidemenu-description-item"><span class="description-text">アプリケーション名:</span> air-bnbコピー</li>
+            <li class="sidemenu-description-item"><span class="description-text">使用言語:</span> Ruby on Rails, HTML, CSS, jQuery</li>
+            <li class="sidemenu-description-item"><span class="description-text">概要:</span>air-bnbをコピーしたwebアプリケーション。</li>
+            <li class="sidemenu-description-item"><span class="description-text">制作期間:</span> 現在製作中</li>
+            <li class="sidemenu-description-item"><span class="description-text">制作理由:</span></br> 既存のサービスをコピーすることで、デザイン、フロントエンドの学習。またRuby on Railsでのバックエンドの仕組みの理解をさらに深める為。</li>
+            <li class="sidemenu-description-item"><span class="description-text">苦労している点:</span></br> ログイン機能のdeviseを使ってログイン画面を作成する点、レビュー投稿機能をRailsのフォームで実装。レビューは投稿の際にうまくデータベースに投稿が保存されなくて詰まってしまった。</li>
+            <li class="sidemenu-description-item"><a href="https://github.com/aki2k16/air-bnb"　target="_blank"><i class="devicon-github-plain-wordmark colored"></i></a></li>
+         </ul>
+        </div>
+        <div class="arrow">
+          <a href="chat-space.html"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="image-box">
+        <img class="image-box-image" src="images/air-bnb.png" alt="制作事例１">
+      </div>
+      <div class="image-box">
+        <img class="image-box-image" src="images/air-bnb-room.png" alt="制作事例2">
+      </div>
+    </div>
+  </div>
+</body>
+</html>

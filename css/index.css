@@ -10,7 +10,7 @@ html {
 
 body {
   text-align: center;
-  font-family: 'Lora', serif, "Hiragino Kaku Gothic ProN", "Meiryo", sans-serif;
+  font-family: "Hiragino Kaku Gothic ProN", 'Montserrat', sans-serif;
   color: #fff;
   text-align: center;
   font-size: 1.4rem;
@@ -18,18 +18,21 @@ body {
 
 .header {
   padding: 120px 30px 80px;
-  background-color: black;
+  background: url('../images/header.jpg') no-repeat fixed left bottom;
+  background-size: cover;
 }
 
 .site-title {
+  font-family: 'Lobster', cursive;
   margin: 100px 0 40px;
   font-size: 7.6rem;
   color: #fff;
 }
 
 .site-description {
+  font-family: 'Lobster', cursive;
   margin-bottom: 50px;
-  color: #888;
+  color: #fff;
   font-size: 1.6rem;
 }
 
@@ -89,7 +92,7 @@ body {
 }
 
 .works {
-  background-color: #000033;
+  background-color: #2f2d2e;
   padding: 80px 0;
   color: #fff;
 }
@@ -138,6 +141,7 @@ body {
   left: 0;
   width: 100%;
   height: 50%;
+  z-index: 1;
 }
 .work-description-inner {
   display: table;
